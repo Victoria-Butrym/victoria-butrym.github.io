@@ -8,12 +8,13 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 10rem 0;
     width: 100vw;
 }
 
 span {
     margin: .8rem 0;
+    text-align: center;
 }
 
 .container {
@@ -21,7 +22,7 @@ span {
 }
 
 .intro {
-    width: 100%;
+    width: calc(100% - 6rem);
     height: 20rem;
     justify-content: center;
     align-items: center;
@@ -29,8 +30,8 @@ span {
     font-size: 2.2rem;
     font-weight: 300;
     flex-direction: column;
-    margin-top: 10rem;
     background-color: #cccccc44;
+    padding: 0 3rem;
 }
 
 .name {
@@ -86,11 +87,25 @@ a {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    margin-right: 2rem;
+    margin: 0 2rem;
 }
 
 a:hover {
     color: #545ff3;
     cursor: pointer;
     transition: .2s;
+}
+
+@media screen and (max-width: 635px) {
+    html {
+        font-size: 8px;
+    }
+
+    .intro {
+        background-color: transparent;
+    }
+
+    .table {
+        font-size: 1.6rem;
+    }
 }
