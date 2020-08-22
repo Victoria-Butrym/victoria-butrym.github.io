@@ -73,14 +73,24 @@ span {
     margin-top: 2rem;
 }
 
+.table tbody {
+    padding-right: 0.5rem;
+}
+
 tr {
     height: 2.2rem;
 }
 
-a {
+.link {
     text-decoration: none;
     color: #333;
     font-weight: 600;
+}
+
+.download {
+    text-decoration: none;
+    color: #fff;
+    margin-right: .1rem;
 }
 
 .profile-image {
@@ -90,7 +100,7 @@ a {
     margin: 0 2rem;
 }
 
-a:hover {
+.link:hover {
     color: #545ff3;
     cursor: pointer;
     transition: .2s;
